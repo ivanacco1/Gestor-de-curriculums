@@ -1,0 +1,245 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #3b3a3a; 
+  color: #bd1919; 
+  margin: 0;
+  padding: 0;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+}
+
+.container {
+  max-width: 800px; 
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #444444;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: auto; 
+}
+
+.currículo img {
+  max-width: 100%; 
+  max-height: 400px; 
+  object-fit: contain;
+}
+
+.currículo h2,
+.currículo p,
+.currículo li {
+  color: #050505; 
+}
+
+.formulario {
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff; 
+}
+
+.title {
+  text-align: center; 
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo input,
+.campo textarea {
+  width: calc(100% - 22px); 
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #4dabf7;
+}
+
+.campo textarea {
+  min-height: 100px;
+}
+
+.campo .fechas input {
+  width: calc(50% - 5px);
+}
+
+.campo .Boton-carga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; 
+  
+}
+
+.campo .Boton-carga label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666666; 
+  cursor: pointer;
+ 
+}
+
+.campo .Boton-carga input[type="file"] {
+  display: none;
+  
+}
+
+.lista-currículos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.currículo {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden; 
+}
+
+.currículo:hover {
+  transform: translateY(-4px);
+}
+
+.currículo h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.currículo p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666666; 
+}
+
+.currículo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.currículo .detalles-currículo {
+  margin-top: 20px;
+}
+
+.currículo .detalles-currículo h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333333; 
+}
+
+.currículo .detalles-currículo p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666666; 
+}
+
+.currículo .detalles-currículo ul {
+  margin-bottom: 10px;
+}
+
+.currículo .detalles-currículo ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #666666; 
+}
+
+.currículo .detalles-currículo button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.currículo .detalles-currículo button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: #dc3545; 
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff; 
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+.topbar {
+  background-color: #053568; 
+  padding: 10px 20px; 
+  text-align: center; 
+  border-radius: 8px; 
+  margin-bottom: 20px; 
+}
+
+.topbar h1 {
+  margin: 0; 
+  color: #ffffff; 
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+.form-section .title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333333; 
+}
+
+.form-section .-Boton-carga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.form-section .Boton-carga label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #000000; 
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: rgb(199, 197, 197) ;
+}
+
+.Boton-carga label:hover{
+  background-color:#9fa8bb;
+  
+  transition: 500ms;
+}
+
+
+.form-section .Boton-carga input[type="file"] {
+  display: none;
+}
